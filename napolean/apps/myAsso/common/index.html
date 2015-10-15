@@ -1,21 +1,65 @@
-<!DOCTYPE HTML>
-<html>
-    	<head>
-    		<meta charset="UTF-8">
-    		<title>myAsso</title>
-    		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-    		<!--
-    			<link rel="shortcut icon" href="images/favicon.png">
-    			<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
-    		-->
-    		<link rel="stylesheet" href="css/main.css">
-    		<script>window.$ = window.jQuery = WLJQ;</script>
-    	</head>
-    	<body style="display: none;">
-    		<!--application UI goes here-->
-    		Hello MobileFirst
-    		<script src="js/initOptions.js"></script>
-    		<script src="js/main.js"></script>
-    		<script src="js/messages.js"></script>
-    	</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"  xmlns:ng="http://angularjs.org" id="ng-app" data-ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+  <meta name="Description" content="napolean"/>
+  <meta name="Owner" content="hicoolalex@gmail.com"/>
+  <meta name="Security" content="Public"/>
+  <title>myAsso</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <script>window.$ = window.jQuery = WLJQ;</script>
+</head>
+<body>
+ <!-- <ul class="menu">
+    <li><a href="#/view1">view1</a></li>
+    <li><a href="#/view2">view2</a></li>
+  </ul>
+-->
+ <!-- <div>
+      <form>
+        <a href="#/login" class="btn btn-primary active" role="button" >Login</a>
+         <a href="#/register" class="btn btn-primary active" role="button" >Register</a>
+        <a href="#/linkmyapp" class="btn btn-primary active" role="button" >Link to my Appartment</a>
+        <a href="#/home" class="btn btn-primary active" role="button" >Home</a>
+    </form>
+  </div>-->
+    
+    <div>
+        <label><h4>Welcome</h4></label>
+        <a href="#/home"><img src="img/continue.png" alt="continue" data-ng-click="clickDisable()"></a>
+    </div>
+  <div data-ng-view></div>
+
+  <!-- Feedback & Report a problem links starts here: these links to be removed once CCF comes into picture-->                    
+  <span class="pull-right" style="padding: 0px 50px;">
+
+	   <a alt="Provide feedback" href="https://www.surveymonkey.com/r/2WS65K8" target="_blank">
+	       <img data-tooltip="Provide feedback" alt="Provide feedback" data-ng-src="img/submit-your-feedback-button.png"
+	                        class="pull-right cursor-pointer"  alt="Provide feedback"/></a>
+       <a alt="Report a problem" href="mailto:hicoolalex@gmail.com?subject=napolean - Report a problem">
+	       <img data-tooltip="Report a problem" alt="Report a problem" data-ng-src="img/problems.jpg" class="pull-right cursor-pointer"  alt="Report a problem"/></a>
+   </span>
+ <!-- Feedback & Reprot a problem links ends here -->    
+                
+  <!--<div>Copyright@Napolean:v<span app-version></span></div>-->
+   <footer>Copyright@Napolean</footer>
+
+    
+<!--Library Begins-->
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services/services.js"></script>
+  <script src="js/controllers/controllers.js"></script>
+  <script src="js/filters/filters.js"></script>
+  <script src="js/directives/directives.js"></script>
+  <script src="lib/bootstrap/bootstrap.min.js"></script>
+  <script src="js/initOptions.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/messages.js"></script>
+<!--Library Ends-->
+</body>
 </html>
