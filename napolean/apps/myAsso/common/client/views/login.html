@@ -1,0 +1,36 @@
+<div id="wrap" >
+    <div class="push-top"></div>
+    <!-- CONTENT BEGIN -->
+    <div style="margin-top: 100px">
+        <img id="alert-icon" src="../../img/alert-icon.png" alt="Alert Icon"
+            style="float: left;" data-ng-show="loginFail"> 
+        <span
+            data-ng-show="loginFail" style="color:black;font-weight:bold;">The sign in attempt
+            failed. You may have incorrectly entered your e-mail ID or
+            password. Please try again using a valid user ID and password.
+        </span> 
+        <div class="login-margin-center"></div>
+        <div class="row">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+                <form data-ng-submit="login()" class="form-signin well-login">
+                    <div class="form-group inner-addon left-addon">
+                                <i class="glyphicon-email"></i>
+                                <input type="email" data-ng-model="username" name="j_username" id="username"
+                                    class="form-control" placeholder="Email ID" autocomplete="off" required/>
+                            </div>
+                            <div class="form-group inner-addon left-addon">
+                                <i class="glyphicon-pwd"></i> 
+                                <input type="password" data-ng-model="password" name="j_password" class="form-control"
+                                    placeholder="PASSWORD" id="password" autocomplete="off" required/>
+                            </div>
+                            <div >
+                                <button class="btn btn-large btn-block "
+                                    name="action" value ="action" type="submit">LOGIN</button>
+                            </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- CONTENT END -->
+    <div class="push"></div>
+</div>
